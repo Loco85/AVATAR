@@ -1,0 +1,88 @@
+html,body,.container-fluid{
+	height: 100%;
+}
+.container-fluid{
+	/*display: table;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0!important;*/
+}
+/*.row{
+	height: 100%!important;
+	display: table-row;
+   overflow-x: hidden!important;
+}*/
+.wrapper{
+	height: 100%;
+}
+section .row{
+   height: 100%!important;
+}
+section{
+	position: relative;
+	min-height: 100%!important;
+}
+section.block{
+   cursor: pointer;
+}
+section.block:hover .well{
+   background: #434343;
+   color: #fff;
+  /* -webkit-animation: bounceIn 1s linear 1;
+   -moz-animation: bounceIn 1s linear 1;
+    animation: bounceIn 1s linear 1;*/
+}
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%!important;
+  height: 100%!important;
+	z-index: 200;
+}
+section.block h2{
+   position: absolute;
+   top: 3%;
+   left: 3%;
+   text-align: center;
+}
+section .well{
+   min-height: 100%!important;
+   border-radius: 0;
+   margin-bottom: 0;
+   -moz-transition: all ease-out 0.2s;
+   transition: all ease-out 0.2s;
+   z-index: 200;
+}
+.section-close{
+   -webkit-animation: jello 1s linear 1;
+   -moz-animation: jello 1s linear 1;
+    animation: jello 1s linear 1;
+}
+.section-open{
+   /*-moz-transform: translate(80%,0);*/
+    margin-left: -100%;
+   /* -webkit-animation: rubberBand 0.5s linear 1;
+    -moz-animation: rubberBand 0.5s linear 1;
+     animation: rubberBand 0.5s linear 1;*/
+      -webkit-animation: bounceIn 1s linear 1;
+   -moz-animation: bounceIn 1s linear 1;
+    animation: bounceIn 1s linear 1;
+    /*z-index: 9999;*/
+}
+/*@media screen and (max-width: 1200px){
+    section.block{
+       margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 992px){
+    section.block{
+       margin-bottom: 150px;
+    }
+}
+@media screen and (max-width: 768px){
+    section.block{
+       margin-bottom: 110px;
+    }
+}*/
